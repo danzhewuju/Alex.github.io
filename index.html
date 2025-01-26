@@ -69,86 +69,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-README" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/26/README/" class="article-date">
-  <time class="dt-published" datetime="2025-01-26T14:59:35.141Z" itemprop="datePublished">2025-01-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="Author"><a href="#Author" class="headerlink" title="Author"></a>Author</h1><p>Alex, this is my blog.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/26/README/" data-id="cm6dr7x0u0000mjg888fz6f0i" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/01/26/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-01-26T12:09:13.920Z" itemprop="datePublished">2025-01-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/01/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/01/26/hello-world/" data-id="cm6dr7x0w0001mjg8gpnghp2x" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-paimon-read-source-code-analysis-apxgf" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/post/paimon-read-source-code-analysis-apxgf.html" class="article-date">
@@ -173,7 +93,9 @@
       
         <h1 id="Paimon-Read-源码分析"><a href="#Paimon-Read-源码分析" class="headerlink" title="Paimon Read 源码分析"></a>Paimon Read 源码分析</h1><h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>本文主要是对paimon的写过程进行源码分析。</p>
 <p>从官网上可以看到paimon读操作的配置，其中相关的配置都和snapshot相关。</p>
+<p>​<img src="https://raw.githubusercontent.com/danzhewuju/danzhewuju.github.io/blog/blog/source/images20250126192344.png" alt="image.png">​</p>
 <p>从下面的流程图中可以看到他们之间主要差别。</p>
+<p>​<img src="https://raw.githubusercontent.com/danzhewuju/danzhewuju.github.io/blog/blog/source/images20250126192340.png" alt="image.png">​</p>
 <p>对于manifest 的文件的读取主要是根据下面的plan 来实现</p>
 <p>org.apache.paimon.operation.AbstractFileStoreScan#plan</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> Plan <span class="title function_">plan</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="type">long</span> <span class="variable">started</span> <span class="operator">=</span> System.nanoTime();</span><br><span class="line">        ManifestsReader.<span class="type">Result</span> <span class="variable">manifestsResult</span> <span class="operator">=</span> readManifests();</span><br><span class="line">        <span class="type">Snapshot</span> <span class="variable">snapshot</span> <span class="operator">=</span> manifestsResult.snapshot;</span><br><span class="line">        List&lt;ManifestFileMeta&gt; manifests = manifestsResult.filteredManifests;</span><br><span class="line"></span><br><span class="line">        Iterator&lt;ManifestEntry&gt; iterator = readManifestEntries(manifests, <span class="literal">false</span>);</span><br><span class="line">        List&lt;ManifestEntry&gt; files = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="keyword">while</span> (iterator.hasNext()) &#123;</span><br><span class="line">            files.add(iterator.next());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (wholeBucketFilterEnabled()) &#123;</span><br><span class="line">            <span class="comment">// We group files by bucket here, and filter them by the whole bucket filter.</span></span><br><span class="line">            <span class="comment">// Why do this: because in primary key table, we can&#x27;t just filter the value</span></span><br><span class="line">            <span class="comment">// by the stat in files (see `PrimaryKeyFileStoreTable.nonPartitionFilterConsumer`),</span></span><br><span class="line">            <span class="comment">// but we can do this by filter the whole bucket files</span></span><br><span class="line">            files =</span><br><span class="line">                    files.stream()</span><br><span class="line">                            .collect(</span><br><span class="line">                                    Collectors.groupingBy(</span><br><span class="line">                                            <span class="comment">// we use LinkedHashMap to avoid disorder</span></span><br><span class="line">                                            file -&gt; Pair.of(file.partition(), file.bucket()),</span><br><span class="line">                                            LinkedHashMap::<span class="keyword">new</span>,</span><br><span class="line">                                            Collectors.toList()))</span><br><span class="line">                            .values()</span><br><span class="line">                            .stream()</span><br><span class="line">                            .map(<span class="built_in">this</span>::filterWholeBucketByStats)</span><br><span class="line">                            .flatMap(Collection::stream)</span><br><span class="line">                            .collect(Collectors.toList());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        List&lt;ManifestEntry&gt; result = files;</span><br><span class="line"></span><br><span class="line">        <span class="type">long</span> <span class="variable">scanDuration</span> <span class="operator">=</span> (System.nanoTime() - started) / <span class="number">1_000_000</span>;</span><br><span class="line">        <span class="keyword">if</span> (scanMetrics != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="type">long</span> <span class="variable">allDataFiles</span> <span class="operator">=</span></span><br><span class="line">                    manifestsResult.allManifests.stream()</span><br><span class="line">                            .mapToLong(f -&gt; f.numAddedFiles() - f.numDeletedFiles())</span><br><span class="line">                            .sum();</span><br><span class="line">            scanMetrics.reportScan(</span><br><span class="line">                    <span class="keyword">new</span> <span class="title class_">ScanStats</span>(</span><br><span class="line">                            scanDuration,</span><br><span class="line">                            manifests.size(),</span><br><span class="line">                            allDataFiles - result.size(),</span><br><span class="line">                            result.size()));</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Plan</span>() &#123;</span><br><span class="line">            <span class="meta">@Nullable</span></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="keyword">public</span> Long <span class="title function_">watermark</span><span class="params">()</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> snapshot == <span class="literal">null</span> ? <span class="literal">null</span> : snapshot.watermark();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="meta">@Nullable</span></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="keyword">public</span> Snapshot <span class="title function_">snapshot</span><span class="params">()</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> snapshot;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="keyword">public</span> List&lt;ManifestEntry&gt; <span class="title function_">files</span><span class="params">()</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> result;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
@@ -188,7 +110,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/post/paimon-read-source-code-analysis-apxgf.html" data-id="cm6dr7x0x0002mjg806p04g4w" data-title="Paimon Read 源码分析" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/post/paimon-read-source-code-analysis-apxgf.html" data-id="cm6drxmmf0000brg83wgx70zv" data-title="Paimon Read 源码分析" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -229,14 +151,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2025/01/26/README/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/01/26/hello-world/">Hello World</a>
-          </li>
         
           <li>
             <a href="/post/paimon-read-source-code-analysis-apxgf.html">Paimon Read 源码分析</a>
